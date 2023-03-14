@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Kuberix Enterprise
 email: your-email@domain.com
 author: GitHub User
 
@@ -72,7 +72,7 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "ko"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -146,19 +146,20 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
+header_pages:
+  - index.html
 #   - archives.html
 #   - categories.html
 #   - tags.html
 #   - about.md
+  - about.html
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "Kuberix Enterprise"
+    subheading: "쿠버릭스가 DevOps, 클라우드 및 MSA의 새로운 시대로 안내합니다."
+    # banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
