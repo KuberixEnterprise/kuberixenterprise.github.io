@@ -21,6 +21,13 @@
         {%- include views/site-brand.html -%}
       </span>
 
+      <!-- HTML elements for search -->
+      <input type="text" id="search-input" placeholder="Search blog posts..">
+      <ul id="results-container"></ul>
+
+      <!-- or without installing anything -->
+      <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
       {%- if page_paths -%}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -59,6 +66,11 @@
 </header>
 
 <script>
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json'
+  })
   function initHeader() {
     var lastScrollY = getScrollPos().y;
     var documentElement = document.documentElement;
