@@ -25,8 +25,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Kuberix Enterprise
-email: your-email@domain.com
-author: GitHub User
+email: kuberix@kuberix.com
+author: Kuberix
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -43,13 +43,11 @@ author: GitHub User
 copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Kuberix is a member of the Megazone Alliance, which provides advanced DevOps technologies to customers who require the highest level of outer architecture.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.kuberix.co.kr" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "" # the favicon for your site
+favicon: "/cropped-favicon-2-32x32.png" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -158,7 +156,7 @@ header_pages:
 defaults:
   home:
     heading: "Kuberix Enterprise"
-    subheading: "쿠버릭스가 DevOps, 클라우드 및 MSA의 새로운 시대로 안내합니다."
+    subheading: "Kuberix 는 국내 최고 수준의 Outer Architecture 영역의 기술을 제공 하는 메가존 얼라이언스의 멤버 입니다."
     # banner: "Your image url"
 
 # Banner default settings
