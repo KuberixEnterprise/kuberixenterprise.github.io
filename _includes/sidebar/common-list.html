@@ -37,12 +37,10 @@
 </div>
 <p></p>
 <h3>태그</h3>
-<div class="common-list">
+<div class="tag-list">
   <ul>
   {% for tag in site.tags limit:5 %}
-    <li>
-      <a href="/tags.html#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-    </li>
+    <a href="/tags.html#{{ tag[0] | slugify }}">{{ tag[0] }}</a><br>
   {% endfor %}
   </ul>
 </div>
