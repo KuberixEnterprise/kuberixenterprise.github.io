@@ -2,8 +2,6 @@
 layout: post
 title: "The responses to the Foldable Android Device"
 description: The responses to the Foldable Android Device
-categories: 
-- Information
 date: 2019-09-23 16:00:00
 tags:
 - Android

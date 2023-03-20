@@ -2,8 +2,6 @@
 layout: post
 title: "[Tutorial] JPA - CRUD RestController 만들기 [2/3]"
 description: JPA의 기본적인 사용방법을 익히기 위해 작성하는 글.
-categories: 
-- tutorial
 date: 2020-02-17 16:59:00
 tags: 
 - JPA

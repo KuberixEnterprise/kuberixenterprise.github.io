@@ -2,8 +2,6 @@
 layout: post
 title: "[Tutorial] QueryDSL 적용하기 - [3/3]"
 description: QueryDSL의 기본적인 사용방법을 익히기 위해 작성하는 글.
-categories: 
-- tutorial
 date: 2020-02-19 11:14:00
 tags: 
 - QueryDSL
