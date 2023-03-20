@@ -6,7 +6,7 @@
   {%- assign field = include.field -%}
 {%- endif -%}
 
-<div class="common-list">
+<!-- <div class="common-list">
   <ul>
     <li>
       <a href="{{ '/index.html' | relative_url }}">
@@ -21,5 +21,28 @@
         </a>
       </li>
     {% endfor %}
+  </ul>
+</div> -->
+
+
+<h3>최근 포스트</h3>
+<div class="common-list">
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<p></p>
+<h3>태그</h3>
+<div class="common-list">
+  <ul>
+  {% for tag in site.tags limit:5 %}
+    <li>
+      <a href="/tags.html#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    </li>
+  {% endfor %}
   </ul>
 </div>
