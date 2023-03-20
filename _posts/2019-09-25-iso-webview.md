@@ -2,8 +2,6 @@
 layout: post
 title: "[iOS] Webview에서 구현 가능한 URL 호출 처리방식"
 description: "[iOS] Webview에서 구현 가능한 URL 호출 처리방식"
-categories:
-- programming
 date: 2019-09-25 21:05:00
 tags:
 - iOS

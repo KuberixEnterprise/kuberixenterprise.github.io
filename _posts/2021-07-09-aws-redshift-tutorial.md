@@ -2,8 +2,6 @@
 layout: post
 title: "AWS 레드시프트 스펙트럼 실습해보기"
 description: AWS 레드시프트 스펙트럼 실습해보기
-categories:
-- aws 
 date: 2021-07-09 11:00:00 
 tags:
 - redshift

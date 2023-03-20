@@ -2,8 +2,6 @@
 layout: post
 title: Android ViewModel & LiveData
 description: Android ViewModel & LiveData
-categories:
-- tutorial
 date: 2019-09-30 02:05:00
 tags:
 - Android ViewModel & LiveData

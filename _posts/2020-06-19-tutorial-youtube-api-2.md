@@ -2,8 +2,6 @@
 layout: post
 title: "YouTube Data API v3 사용해보기 (2/2)"
 description: YouTube Data API v3 사용해보기 (2/2)
-categories:
-- java
 date: 2020-06-19 17:00:00
 tags:
 - youtube

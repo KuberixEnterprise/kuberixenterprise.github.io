@@ -2,8 +2,6 @@
 layout: post
 title: "Devops 문화 정착에 실패했던 경험담"
 description: Devops 문화 정착에 실패했던 경험담을 남기는 글.
-categories: 
-- essay
 date: 2019-09-20 09:05:00
 tags:
 - devops

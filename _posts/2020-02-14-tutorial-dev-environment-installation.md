@@ -2,8 +2,6 @@
 layout: post
 title: "[Tutorial] 개발환경 구성 - Spring Boot, Git, Maven [1/3]"
 description: 첫 개발환경 구성 시 필요한 프로그램을 설치하기 위해 작성하는 글.  
-categories: 
-- tutorial
 date: 2020-02-14 18:00:00
 tags: 
 - SpringBoot

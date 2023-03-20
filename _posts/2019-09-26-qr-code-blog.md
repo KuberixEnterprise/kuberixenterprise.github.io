@@ -2,8 +2,6 @@
 layout: post
 title: "QR code(Quick Response code) 생성"
 description: "QR code(Quick Response code)"
-categories:
-- programming
 date: 2019-09-26 20:05:00
 tags:
 - qrCode
