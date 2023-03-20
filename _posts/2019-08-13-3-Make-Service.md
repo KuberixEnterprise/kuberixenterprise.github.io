@@ -2,8 +2,6 @@
 layout: post
 title: "AWS EC2 인스턴스에 Docker Services 생성하기 [3/6]"
 description: "3# AWS EC2 인스턴스에서 Docker Services 생성하기"
-categories:
-- tutorial
 date: 2019-08-13 01:05:00
 tags:
 - AWS

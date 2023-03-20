@@ -2,8 +2,6 @@
 layout: post
 title: "Docker Services Rolling 테스트하기 [4/6]"
 description: "4# Docker Services Rolling 테스트하기"
-categories:
-- tutorial
 date: 2019-08-19 01:05:00
 tags:
 - Docker

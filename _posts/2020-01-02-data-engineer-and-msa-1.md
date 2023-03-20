@@ -2,8 +2,6 @@
 layout: post
 title: "1# 데이터 엔지니어와 마이크로 서비스 구축 SI 프로젝트"
 description: 1# 데이터 엔지니어와 마이크로 서비스 구축 SI 프로젝트
-categories:
-- msa
 date: 2020-01-02 09:00:00
 tags:
 - msa

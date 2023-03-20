@@ -2,8 +2,6 @@
 layout: post
 title: "데이터 웨어하우스와 BPMN 을 기반한 이커머스 업무자동화 시스템 개발기"
 description: 데이터 웨어하우스와 BPMN 을 기반한 이커머스 업무자동화 시스템 개발기
-categories:
-- aws
 date: 2021-04-16 11:00:00
 tags:
 - redshift

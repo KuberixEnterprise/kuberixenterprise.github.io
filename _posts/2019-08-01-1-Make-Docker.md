@@ -2,8 +2,6 @@
 layout: post
 title: "AWS EC2 인스턴스에 Docker 설치하기 [1/6]"
 description: 1# AWS EC2 인스턴스에 Docker 설치하기
-categories:
-- tutorial
 date: 2019-08-01 01:05:00
 tags:
 - AWS

@@ -2,8 +2,6 @@
 layout: post
 title: "Android Room 기술"
 description: Android Room 이란?
-categories:
-- tutorial
 date: 2019-09-30 02:05:00
 tags:
 - Android Room

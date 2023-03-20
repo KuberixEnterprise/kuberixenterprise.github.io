@@ -2,8 +2,6 @@
 layout: post
 title: "Atlassian 제품군 플러그인 개발환경 구축하기"
 description: Atlassian 제품군 플러그인 개발환경 구축하기 글
-categories:
-- tutorial
 date: 2019-11-14 02:05:00
 tags:
 - cloud

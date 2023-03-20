@@ -2,8 +2,6 @@
 layout: post
 title: "Spring-boot-data-jpa Example"
 description: JPA를 사용하여 간단히 조회를 해보자!
-categories:
-- tutorial
 date: 2019-09-10 12:11:00
 tags:
 - java

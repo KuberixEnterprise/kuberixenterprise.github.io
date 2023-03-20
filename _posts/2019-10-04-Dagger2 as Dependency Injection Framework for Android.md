@@ -2,8 +2,6 @@
 layout: post
 title: Android Dependency Injection Framework Dagger2
 description: Android Dependency Injection Framework Dagger2
-categories:
-- tutorial
 date: 2019-10-04 09:30:00
 tags:
 - Android Dependency Injection Framework Dagger2

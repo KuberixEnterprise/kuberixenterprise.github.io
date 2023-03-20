@@ -2,8 +2,6 @@
 layout: post
 title: "1# 그럭저럭 돌아가는 Kafka 운영 환경 빨리 만들기"
 description: Kafka 운영 환경 만들어보면서 쓰는 글
-categories:
-- tutorial
 date: 2019-09-30 02:05:00
 tags:
 - kafka

@@ -2,8 +2,6 @@
 layout: post
 title: "Oauth2.0 기반의 SSO 솔루션 구축기"
 description: Oauth2.0 기반의 SSO 솔루션 구축기
-categories:
-- sso
 date: 2020-04-19 11:00:00
 tags:
 - sso

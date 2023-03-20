@@ -2,8 +2,6 @@
 layout: post
 title: "Android Advanced Architecture Guide"
 description: Android Advanced Architecture Guide
-categories:
-- tutorial
 date: 2019-09-30 02:05:00
 tags:
 - Androidn Room

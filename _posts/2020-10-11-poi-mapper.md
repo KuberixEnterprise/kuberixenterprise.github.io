@@ -2,8 +2,6 @@
 layout: post
 title: "Poi-mapper(Excel model mapper) 라이브러리 개발기"
 description: Poi-mapper(Excel model mapper) 라이브러리 개발기
-categories:
-- java
 date: 2020-10-11 11:00:00
 tags:
 - enum

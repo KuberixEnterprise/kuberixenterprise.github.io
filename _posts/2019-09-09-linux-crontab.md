@@ -2,8 +2,6 @@
 layout: post
 title: "리눅스 CronTab 으로 스케쥴러 실행하기"
 description: 간단한 배치 작업을 수행할 필요가 있어 CronTab 을 써보고 작성하는 글.
-categories:
-- programming
 date: 2019-09-09 01:05:00
 tags:
 - linux

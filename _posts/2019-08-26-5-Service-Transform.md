@@ -2,8 +2,6 @@
 layout: post
 title: "Docker Services 상태 전환하기 [5/6]"
 description: "5# Docker Services 상태 전환하기"
-categories:
-- tutorial
 date: 2019-08-26 01:05:00
 tags:
 - Docker

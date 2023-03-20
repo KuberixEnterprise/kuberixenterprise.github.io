@@ -2,8 +2,6 @@
 layout: post
 title: "JIRA Agile Software Development"
 description: 지라 애자일 워크플로우를 공부하며 남기는 글.
-categories:
-- essay
 date: 2019-09-15 23:05:00
 tags:
 - jira

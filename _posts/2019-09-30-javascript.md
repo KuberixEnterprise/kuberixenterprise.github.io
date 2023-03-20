@@ -2,8 +2,6 @@
 layout: post
 title: "What is Javascript"
 description: 자바스크립트에 대해서 알아보자.
-categories:
-- introduction
 date: 2019-09-30 09:34:00
 tags:
 - javascript

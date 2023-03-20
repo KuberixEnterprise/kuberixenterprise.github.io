@@ -2,8 +2,6 @@
 layout: post
 title: "AWS ACM 인증서 만료 방지하기"
 description: AWS 인증서가 만료되어 시스템 장애를 예방하기 위해 작성하는 글.
-categories:
-- programming
 date: 2019-09-07 01:05:00
 tags:
 - aws

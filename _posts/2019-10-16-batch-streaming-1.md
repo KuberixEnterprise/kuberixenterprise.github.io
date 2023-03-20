@@ -2,8 +2,6 @@
 layout: post
 title: "Kafka 를 활용한 OCR 검수 시스템 만들기"
 description: Kafka 를 활용한 OCR 검수 시스템 만들기 글
-categories:
-- tutorial
 date: 2019-10-16 02:05:00
 tags:
 - msa

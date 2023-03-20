@@ -2,8 +2,6 @@
 layout: post
 title: "API Gateway,Lambda,S3, DynamoDB 사용기(3)"
 description: API Gateway,Lambda,S3, DynamoDB를 사용해보며 남기는 글
-categories:
-- aws
 date: 2019-12-31 14:00:00
 tags:
 - aws
