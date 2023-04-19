@@ -155,8 +155,8 @@ header_pages:
 # Page default value
 defaults:
   home:
-    heading: "Megezone Kuberix Enterprise"
-    subheading: "Megezone Kuberix 는 국내 최고 수준의 Outer Architecture 영역의 기술을 제공 하는 메가존 얼라이언스의 멤버 입니다."
+    heading: "Megezone Cloud Kuberix"
+    subheading: "Megezone Cloud Kuberix 는 국내 최고 수준의 Outer Architecture 영역의 기술을 제공 하는 메가존 얼라이언스의 멤버 입니다."
     # banner: "Your image url"
 
 # Banner default settings
