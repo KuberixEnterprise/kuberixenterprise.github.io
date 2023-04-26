@@ -94,12 +94,10 @@ services:
 무사히 잘 gitlab version 업을 하고 테스트 파이프라인을 돌렸더니 기존에 잘 사용하고 있던 파이프라인이 오류가 났습니다..
 오류가 나는 부분을 살펴보니 variable를 제대로 읽어오지 못해 artifacts/paths가 정상작동(?) 하지 않았고, 
 artifact에 빌드된 파일이 제대로 올라가지 못하니까 해당 폴더에서 파일을 읽어오는 stage에서 문제가 생긴 것이었습니다.
+![image](https://user-images.githubusercontent.com/32283544/234451235-d5614865-061a-46db-bb3c-ccec66c27523.png)
+
 
 ### 해결
-구글링 중 Gitlab에서 현 상황과 똑같은 문제로 이슈를 생성한 글을 보았습니다.
-해당 글에서 Gitlab 버전 변경 시 helper image도 같이 변경해야 한다는 글을 발견했습니다.
-
-
 인터넷에 서치해보니, gitlab version 변경 시 helper image도 같이 변경해주어야 한다는 글을 보았습니다.
 helper image를 변경하는 데에는 여러가지 이유가 있는데, Gitlab Docs에서
 1. job 실행 속도 높이기 위함
