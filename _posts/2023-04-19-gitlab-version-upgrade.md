@@ -6,8 +6,7 @@ tags:
 - blog
 ---
 
-현재 아모레는 GitLab CE 15.2 버전으로 설치되어 있으며, 해당 버전은 원격코드 실행 취약점(CVE-2022-2992)이 존재하여 버전 업을 하게 되었다.
-
+현재 아모레는 GitLab CE 15.2 버전으로 설치되어 있으며, 해당 버전은 원격코드 실행 취약점(CVE-2022-2992)이 존재하여 버전 업을 하게 되었습니다.
 
 
 # Gitlab version upgrade 작업 항목
@@ -88,3 +87,29 @@ services:
       - /data/gitlab.bak/config:/etc/gitlab
 ...
 ```
+
+
+## Troubleshooting
+### 이슈
+무사히 잘 gitlab version 업을 하고 테스트 파이프라인을 돌렸더니 기존에 잘 사용하고 있던 파이프라인이 오류가 났습니다..
+오류가 나는 부분을 살펴보니 variable를 제대로 읽어오지 못해 artifacts/paths가 정상작동(?) 하지 않았고, 
+artifact에 빌드된 파일이 제대로 올라가지 못하니까 해당 폴더에서 파일을 읽어오는 stage에서 문제가 생긴 것이었습니다.
+
+### 해결
+구글링 중 Gitlab에서 현 상황과 똑같은 문제로 이슈를 생성한 글을 보았습니다.
+해당 글에서 Gitlab 버전 변경 시 helper image도 같이 변경해야 한다는 글을 발견했습니다.
+
+
+인터넷에 서치해보니, gitlab version 변경 시 helper image도 같이 변경해주어야 한다는 글을 보았습니다.
+helper image를 변경하는 데에는 여러가지 이유가 있는데, Gitlab Docs에서
+1. job 실행 속도 높이기 위함
+2. 보안 문제
+3. 빌드 환경이 폐쇄망
+4. 소프트웨어 추가
+이렇게 4가지를 이유로 들었습니다.
+
+그 중 2번에 해당 된다고 생각되어 helper image를 변경하였더니 파이프라인이 정상작동했습니다.
+
+참고 url: 
+- https://gitlab.com/gitlab-org/gitlab/-/issues/388948
+- https://docs.gitlab.com/runner/configuration/advanced-configuration.html#override-the-helper-image
