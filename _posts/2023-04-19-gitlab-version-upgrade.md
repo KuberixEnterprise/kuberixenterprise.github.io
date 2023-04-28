@@ -94,11 +94,11 @@ helper image를 변경하는 데에는 여러가지 이유가 있는데, [GitLab
 현재 고객사는 폐쇄망으로 구축되어 helper image를 ECR에 올리고 그걸 가져와서 사용하는 형식입니다.
 그래서 위의 이유 중 3번에 해당 한다고 생각되었고, helper image를 변경하였더니 파이프라인이 정상작동했습니다.
 
-ECR에 helper image 목록입니다.
-![image](https://user-images.githubusercontent.com/32283544/235034744-deb18b7b-eb40-4967-83b1-e6a22717d80f.png)
+ECR에 helper image의 태그 목록입니다.
+![image](https://user-images.githubusercontent.com/32283544/235035995-5129395d-4ae4-4e0f-8d54-a977383bac35.png)
 
 helper image는 각 runner의 /etc/gitlab-runner/config.toml에서 수정 가능합니다.
-![image](https://user-images.githubusercontent.com/32283544/235035040-c36d647d-9831-4a69-b5db-7cb071cd8d23.png)
+![image](https://user-images.githubusercontent.com/32283544/235035507-e321f7a4-47d6-4fa4-bbf9-8c7d7f2209d6.png)
 
 
 
