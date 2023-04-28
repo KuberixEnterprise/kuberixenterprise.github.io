@@ -95,6 +95,7 @@ helper image를 변경하는 데에는 여러가지 이유가 있는데, [GitLab
 그래서 위의 이유 중 3번에 해당 한다고 생각되었고, helper image를 변경하였더니 파이프라인이 정상작동했습니다.
 
 ECR에 helper image의 태그 목록입니다.
+
 ![image](https://user-images.githubusercontent.com/32283544/235035995-5129395d-4ae4-4e0f-8d54-a977383bac35.png)
 
 helper image는 각 runner의 /etc/gitlab-runner/config.toml에서 수정 가능합니다.
