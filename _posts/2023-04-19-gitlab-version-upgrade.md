@@ -72,12 +72,14 @@ docker-compose up -d
 6. GitLab Runner도 위와 동일하게 진행
 
 
+
 ## Troubleshooting
 ### 이슈
 무사히 잘 GitLab version 업을 하고 테스트 파이프라인을 돌렸더니 기존에 잘 사용하고 있던 파이프라인이 오류가 났습니다..
 오류가 나는 부분을 살펴보니 variable를 제대로 읽어오지 못해 artifacts/paths가 정상작동(?) 하지 않았고, 
 artifact에 빌드된 파일이 제대로 올라가지 못하니까 해당 폴더에서 파일을 읽어오는 stage에서 문제가 생긴 것이었습니다.
 ![image](https://user-images.githubusercontent.com/32283544/234451235-d5614865-061a-46db-bb3c-ccec66c27523.png)
+
 
 
 ### 해결
@@ -91,6 +93,13 @@ helper image를 변경하는 데에는 여러가지 이유가 있는데, [GitLab
 
 현재 고객사는 폐쇄망으로 구축되어 helper image를 ECR에 올리고 그걸 가져와서 사용하는 형식입니다.
 그래서 위의 이유 중 3번에 해당 한다고 생각되었고, helper image를 변경하였더니 파이프라인이 정상작동했습니다.
+
+ECR에 helper image 목록입니다.
+![image](https://user-images.githubusercontent.com/32283544/235034744-deb18b7b-eb40-4967-83b1-e6a22717d80f.png)
+
+helper image는 각 runner의 /etc/gitlab-runner/config.toml에서 수정 가능합니다.
+![image](https://user-images.githubusercontent.com/32283544/235035040-c36d647d-9831-4a69-b5db-7cb071cd8d23.png)
+
 
 
 ## 복구 절차
