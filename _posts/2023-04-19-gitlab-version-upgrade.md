@@ -30,7 +30,7 @@ GitLab CI를 사용하고 GitLab 버전 업 계획이 있는 사람들에게 도
 - GitLab & GitLab Runner  15.2 버전을 15.10 버전으로 업그레이드
 
 ## 작업 상세
-1. GitLab & GitLab Runner 도커볼륨 백업
+1.GitLab & GitLab Runner 도커볼륨 백업
 
 ```
 # gitlab backup
@@ -42,11 +42,11 @@ cd /data
 sudo cp -r gitlab-runner/ gitlab-runner.bak
 ```
 
-2. GitLab 대시보드에서 기존 GitLab & Runner 버전 확인
+2.GitLab 대시보드에서 기존 GitLab & Runner 버전 확인
 GitLab : 15.2.2
 GitLab Runner 1,2,3,4 : 15.2.2
 
-3. GitLab 업그레이드 버전 이미지 받기
+3.GitLab 업그레이드 버전 이미지 받기
 
 ```
 docker pull gitlab/gitlab-ce:15.10.2-ce.0
@@ -54,7 +54,7 @@ docker pull gitlab/gitlab-ce:15.10.2-ce.0
 docker images -a
 ```
 
-4. docker-compose.yml 파일 수정
+4.docker-compose.yml 파일 수정
 
 ```
 cd /data/containers/
@@ -69,14 +69,14 @@ services:
 ...
 ```
 
-5. GitLab 재시작
+5.GitLab 재시작
 
 ```
 # docker-compose 실행 명령어
 docker-compose up -d
 ```
 
-6. GitLab Runner도 위와 동일하게 진행
+6.GitLab Runner도 위와 동일하게 진행
 
 
 
@@ -120,7 +120,7 @@ helper image는 각 runner의 /etc/gitlab-runner/config.toml에서 수정 가능
 
 복구 과정을 경우에 따라 나눠서 작성했습니다.
 
-1. 이미지에 대한 문제
+1.이미지에 대한 문제
 다운로드 과정에서 네트워크 환경이 좋지 못했다던가, 이미지가 이상(?)하다던가, 등 버전 업 이미지에 문제가 있는 경우입니다.
 
 docker-compose.yml파일에서 이전에 사용하던 이미지로 수정한 뒤, GitLab 재시작
@@ -133,7 +133,7 @@ sudo vi docker-compose.yml
 docker-compose up -d
 ```
 
-2. Data에 대한 문제
+2.Data에 대한 문제
 이미지 변경하는 과정에서 데이터가 날아갔다던가(...), 유실이 생겼다던가 등 데이터에 문제가 있는 경우입니다.
 
 백업해두었던 볼륨 폴더를 도커 볼륨으로 사용하도록 수정한 뒤, GitLab 재시작
