@@ -16,6 +16,7 @@ tags:
 - GitLab CE/EE 11.10 이상  15.1.6 미만 버전
 - GitLab CE/EE 15.2 이상 15.2.4 미만 버전
 - GitLab CE/EE 15.3이상 15.3.2 미만 버전
+
 이고 고객사에서 사용하는 GitLab 버전(15.2)은 GitLab CE 15.2입니다.
 
 그래서 현재 운영하고 있는 고객사의 ISMS 인증 대응하는 과정에서 위의 내용인 원격코드 실행 취약점(CVE-2022-2992)이 발견되었고 그로 인해 GitLab 버전 업을 진행하게 되었습니다.
@@ -30,6 +31,7 @@ GitLab CI를 사용하고 GitLab 버전 업 계획이 있는 사람들에게 도
 
 ## 작업 상세
 1. GitLab & GitLab Runner 도커볼륨 백업
+
 ```
 # gitlab backup
 cd /data
@@ -45,6 +47,7 @@ GitLab : 15.2.2
 GitLab Runner 1,2,3,4 : 15.2.2
 
 3. GitLab 업그레이드 버전 이미지 받기
+
 ```
 docker pull gitlab/gitlab-ce:15.10.2-ce.0
 # 이미지 확인
@@ -52,6 +55,7 @@ docker images -a
 ```
 
 4. docker-compose.yml 파일 수정
+
 ```
 cd /data/containers/
 sudo vi docker-compose.yml
@@ -66,6 +70,7 @@ services:
 ```
 
 5. GitLab 재시작
+
 ```
 # docker-compose 실행 명령어
 docker-compose up -d
@@ -119,6 +124,7 @@ helper image는 각 runner의 /etc/gitlab-runner/config.toml에서 수정 가능
 다운로드 과정에서 네트워크 환경이 좋지 못했다던가, 이미지가 이상(?)하다던가, 등 버전 업 이미지에 문제가 있는 경우입니다.
 
 docker-compose.yml파일에서 이전에 사용하던 이미지로 수정한 뒤, GitLab 재시작
+
 ```
 # docker-compose.yml 파일에서 기존 이미지로 수정 후, Gitalb 재실행
 
@@ -131,6 +137,7 @@ docker-compose up -d
 이미지 변경하는 과정에서 데이터가 날아갔다던가(...), 유실이 생겼다던가 등 데이터에 문제가 있는 경우입니다.
 
 백업해두었던 볼륨 폴더를 도커 볼륨으로 사용하도록 수정한 뒤, GitLab 재시작
+
 ```
 # docker-compose.yml
 ...
