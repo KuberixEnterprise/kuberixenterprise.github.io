@@ -3,7 +3,9 @@ layout: post
 title: "GitLab version upgrade"
 description: GitLab version upgrade와 후에 생긴 이슈 해결에 대한 내용
 tags:
-- blog
+- gitlab
+- gitlab version
+- cve
 ---
 
 
@@ -59,7 +61,7 @@ sudo vi docker-compose.yml
 version: "3.6"
 services:
   gitlab:
-    image: gitlab/gitlab-ce:15.10.2-ce.0
+    image: gitlab/gitlab-ce:15.10.2-ce.0 # 업그레이드하는 이미지로 변경
 ...
 ```
 
