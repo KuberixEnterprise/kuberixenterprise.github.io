@@ -5,6 +5,7 @@ description: GitLab version upgrade와 후에 생긴 이슈 해결에 대한 내
 tags:
 - gitlab
 - gitlab version
+- gitlab runner
 - cve
 ---
 
@@ -85,7 +86,7 @@ docker-compose up -d
 무사히 잘 GitLab version 업을 하고 테스트 파이프라인을 돌렸더니 기존에 잘 사용하고 있던 파이프라인이 오류가 났습니다..
 오류가 나는 부분을 살펴보니 variable를 제대로 읽어오지 못해 artifacts/paths가 정상작동(?) 하지 않았고, 
 artifact에 빌드된 파일이 제대로 올라가지 못하니까 해당 폴더에서 파일을 읽어오는 stage에서 문제가 생긴 것이었습니다.
-![image](https://user-images.githubusercontent.com/32283544/234451235-d5614865-061a-46db-bb3c-ccec66c27523.png)
+![234451235-d5614865-061a-46db-bb3c-ccec66c27523](https://user-images.githubusercontent.com/92906503/235565933-52f6256b-12c7-4421-9e49-3175a4d01217.png)
 
 
 
