@@ -21,7 +21,7 @@ harbor Authentication 설정을 통해 Keycloak OIDC Client와 연동하는 방�
 * harbor 설치 시 생성되는 **admin**(관리자) 계정 외 **사용자 계정이 없는 상태**에서만 설정이 가능합니다.
 * OIDC Provider 연동시 harbor에서 **사용자를 추가할 수 없습니다.**
 
-## Redirect URI 확인
+## Harbor Redirect URI 확인
 Harbor admin 계정 로그인 > Administration > Configuration > Authentication
 ![image](https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/92906503/502d5c5e-7c45-4be2-9fab-bfdbecfbc599)
 *<center>Keycloak Client 설정에서 사용할 Redirect URI 복사</center>*
