@@ -62,7 +62,7 @@ OAuth 동의 화면에서 사용자 유형을 내부로 선택했기 때문에, 
 
 ## 마치며
 처음엔 Keycloak에서 사용자를 직접 추가 및 관리하려고 했으나, 입사자 및 퇴사자 Google 계정을 이미 타 부서에서 관리하고 있는 상황이였습니다. 그리고 Google 계정 로그인을 통해 기존 사용하던 협업 도구들이 있었기 때문에, Google 계정만 로그인되어 있으면 사내 솔루션에 접근할 수 있도록 구성하는 방향으로 변경하게 되었습니다.  
-결과적으로 자체 Keycloak 사용자 관리 시 연동하려고 했던 Atlassian Access 유료플랜을 사용하지 않아도 되게 되었고 계정관리도 타 부서에서 관리하며 Google 계정 로그인 시 인증도 자동으로 거치게 되는 편한 구성이 된 것 같습니다.
+결과적으로 자체 Keycloak 사용자 관리 시 연동하려고 했던 Atlassian Access 유료플랜을 사용하지 않아도 되게 되었고, 계정관리도 타 부서에서 관리하며, Google 계정 로그인 시 인증도 자동으로 거치게 되는 구성이 되었습니다.
 
 ## 참고
 * [Server Administration Guide (Integrating identity providers)](https://www.keycloak.org/docs/latest/server_admin/#_google){:target="_blank"}
