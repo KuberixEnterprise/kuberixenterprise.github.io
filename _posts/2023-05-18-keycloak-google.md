@@ -18,12 +18,12 @@ tags:
 * [keycloak 21.1.1](https://blog.kuberix.co.kr/2023/05/10/keycloak-dockercompose-install.html){:target="_blank"}
 * [harbor 2.7.0](https://blog.kuberix.co.kr/2023/05/17/keycloak-harbor.html){:target="_blank"}
 
-## keycloak 리디렉션 URI 확인
+## Keycloak 리디렉션 URI 확인
 google OAuth 설정에 입력 할 리디렉션 URI를 위해, 미리 keycloak에서 identity provider를 생성 하여 복사해둡니다.
 ![image](https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/92906503/947cb7e4-aa7e-4dbc-a98b-52043689886b)
 *<center>Redirect URI 복사</center>*
 
-## google oauth client 설정
+## Google OAuth Client 설정
 Google Cloud의 **OAuth Client** 및 **OAuth 동의 화면** 설정을 통해 조직 내 사용자가 로그인 할 수 있는 클라이언트를 생성합니다.
 
 ### OAuth 클라이언트 ID
@@ -44,7 +44,7 @@ Google Cloud의 **OAuth Client** 및 **OAuth 동의 화면** 설정을 통해 �
 ![image](https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/92906503/bc1de2b1-b09c-4164-82d5-41382c781699)
 *<center>사용자 유형을 내부로 설정 시, 조직에 속한 사용자만 로그인 제한</center>*
 
-## keycloak identity providers 설정
+## Keycloak Identity Providers 설정
 OAuth 클라이언트 ID 생성 시 만들어지는 클라이언트 ID와 클라이언트 보안 비밀번호를 입력 후 저장합니다.
 
 ![image](https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/92906503/c20427c7-487b-4504-9bfc-5750c76a696e)
