@@ -6,6 +6,7 @@ tags:
 - keycloak
 - 21.1.1
 - docker compose
+author: 박현성
 ---
 
 keycloak 설치를 위해 [Getting started](https://www.keycloak.org/guides#getting-started){:target="_blank"} 문서를 찾아보면 docker, kubernetes, openjdk, openshift, podman 5가지 방법이 소개되어 있습니다. 이중 docker를 사용한 문서를 확인해보면 빠른 시작을 위해 dev모드 기준으로 설명되어 있으며, docker compose를 사용한 시작 방법은 가이드되어 있지 않았습니다. 그래서 **docker compose**를 사용하여 현재 최신 버전인 **keycloak 21.1.1**을 기준 **production** 모드로 설치하는 문서를 작성하게 되었습니다.
