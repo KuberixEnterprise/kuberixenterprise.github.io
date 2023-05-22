@@ -6,6 +6,7 @@ tags:
 - keycloak
 - harbor
 - oidc
+author: 박현성
 ---
 
 harbor Authentication 설정을 통해 Keycloak OIDC Client와 연동하는 방법을 설명합니다. [Configure OIDC Provider Authentication](https://goharbor.io/docs/1.10/administration/configure-authentication/oidc-auth/) 문서와 [Keycloak as OIDC Provider for Harbor](https://medium.com/@panda1100/keycloak-as-oidc-provider-for-harbor-c25906481619) 블로그를 참고하였습니다.
