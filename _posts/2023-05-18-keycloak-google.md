@@ -6,6 +6,7 @@ tags:
 - keycloak
 - google
 - identity provider
+author: 박현성
 ---
 
 쿠버릭스는 기본적으로 Google Workspace 계정을 발급받아 Jira, Confluence, Slack과 같은 협업 도구도 Google 로그인을 통해 사용하고 있습니다. 이 문서에서는 Gitlab, Harbor와 같은 직접 설치한 툴도 keycloak을 거쳐 Google 계정을 통해 로그인 할 수 있도록, [Integrating identity providers 문서](https://www.keycloak.org/docs/latest/server_admin/#_google){:target="_blank"}를 참고하여 연동하는 방법에 대해 다룹니다.
