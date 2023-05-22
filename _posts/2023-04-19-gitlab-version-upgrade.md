@@ -7,6 +7,7 @@ tags:
 - gitlab version
 - gitlab runner
 - cve
+author: 이화경
 ---
 
 
