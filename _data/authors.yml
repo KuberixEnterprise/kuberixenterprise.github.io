@@ -6,3 +6,7 @@
   name: 박현성
   photo: https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/92906503/0e7fd739-044e-4717-ba35-9e036162e319
   comment: 박현성 기술팀장은 KB국민은행 프로젝트와 쿠버네티스, 데브옵스 지식을 바탕으로 앱 배포를 위한 파이프라인 구성과 클라우드 환경 구축시 발생하는 문제점을 해결하는 역할을 수행하고 있습니다.
+이화경:
+  name: 이화경
+  photo: https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/32283544/edc08a98-a575-49a5-96d5-f8332594fc1b
+  comment: 이화경 매니저는 신한은행 프로젝트와 아모레퍼시픽 운영을 바탕으로 CI 파이프라인 구성과 백엔드 개발, 데브옵스 엔지니어 역할을 수행하고 있습니다.
