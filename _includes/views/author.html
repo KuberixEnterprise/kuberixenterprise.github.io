@@ -1,0 +1,26 @@
+<div class="author">
+    {% assign author = site.data.authors[page.author] %}
+    
+
+    {% if author %}
+    <table border="0" cellspacing="0" cellpadding="0" style="border-bottom-style:solid;border-bottom-width:1px;border-top-style:solid;border-top-color:rgb(16,178,221);width:100%;font-family:Gulim;margin:0px;padding:20px 0px 20px 0px;border-bottom-color:rgb(16,178,221);border-top-width:1px;">
+        <tbody>
+            <tr>
+                <td width="200"  align="center"><img src="{{author.photo}}" alt="" border="0" width="150px"></td>
+                <td width="600" style="font-family:'Malgun Gothic';font-size:12px;">
+                    
+                     <!-- 이름 -->
+                     <p>
+                        <span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap;font-size:large;">{{author.name}}</span>
+                    </p>
+                    
+                    <!-- 코멘트 -->                                                           
+                    <p style="margin:20px 0 0 0;">
+                        {{author.comment}}
+                    </p>
+                </td>              
+            </tr>
+        </tbody>
+    </table>
+    {% endif %}
+</div>

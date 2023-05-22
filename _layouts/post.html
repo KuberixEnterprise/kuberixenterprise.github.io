@@ -27,6 +27,11 @@ sidebar:
 
     {%- include views/article.html -%}
 
+    <!-- author 추가 -->
+    {%- if page.author -%}
+    {%- include views/author.html -%}
+    {%- endif -%}
+
     {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
     {%- if result.size == 0 -%}
     <div class="post-nav">
