@@ -5,6 +5,7 @@ description: Kafka 운영 환경 만들어보면서 쓰는 글
 date: 2019-09-30 02:05:00
 tags:
 - kafka
+author: 박승필
 ---
 
 이 글은 다음과 같은 분들을 위해 쓰였습니다.

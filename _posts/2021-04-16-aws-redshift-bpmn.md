@@ -7,6 +7,7 @@ tags:
 - redshift
 - bpmn
 - aws
+author: 박승필
 ---
 
 # 데이터 웨어하우스와 BPMN 을 기반한 이커머스 업무자동화 시스템 개발기

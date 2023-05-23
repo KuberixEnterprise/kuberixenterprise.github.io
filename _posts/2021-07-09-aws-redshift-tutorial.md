@@ -7,6 +7,7 @@ tags:
 - redshift
 - bpmn
 - aws
+author: 박승필 
 ---
 
 # AWS 레드시프트 스펙트럼 실습해보기

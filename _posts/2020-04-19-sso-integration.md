@@ -5,6 +5,7 @@ description: Oauth2.0 기반의 SSO 솔루션 구축기
 date: 2020-04-19 11:00:00
 tags:
 - sso
+author: 박승필
 ---
 
 # Oauth2.0 기반의 SSO 솔루션 구축기

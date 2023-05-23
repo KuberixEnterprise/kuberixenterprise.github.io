@@ -5,6 +5,7 @@ description: Spring Security 다중인증수단 적용기
 date: 2020-10-05 11:00:00
 tags:
 - enum
+author: 박승필
 ---
 
 # Spring Security 다중인증수단 적용기

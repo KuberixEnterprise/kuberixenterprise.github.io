@@ -7,6 +7,7 @@ tags:
 - cloud
 - vdi
 - atlassian
+author: 박승필
 ---
 
 # Atlassian 제품군 플러그인 개발환경 구축하기
