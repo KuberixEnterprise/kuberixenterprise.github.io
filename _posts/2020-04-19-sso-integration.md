@@ -44,11 +44,11 @@ OAuth 2.0의 사양과 확장은 [IETF OAuth Working Group] (https://www.ietf.or
  - 응용 프로그램은 발급 된 토큰을 사용하여 각 서비스간에 통신 및 로그인 절차를 수행합니다.
  
 *AS-IS / TO-BE* 
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept1.png)
+![](/assets/sso/concept/concept1.png)
  
 > 새로운 서비스 나 새로운 스토리지가 증가함에 따라 기존 애플리케이션 코드를 수정할 필요가 없습니다.
  
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept2.png) 
+![](/assets/sso/concept/concept2.png) 
  
 ## Flexible user repository
 
@@ -57,7 +57,7 @@ OAuth 2.0의 사양과 확장은 [IETF OAuth Working Group] (https://www.ietf.or
 다음은 전통적인 Oauth2 아키텍처와 각 구성 요소에 대한 설명입니다.
 
 *Traditional Oauth2 basic architecture*
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept3.png)
+![](/assets/sso/concept/concept3.png)
 
 원래 인증 서버의 목적은 기업이 운영하는 다양한 크로스-도메인 사이트 간에 단일 사용자 ID로 로그인하는 것입니다.
 이 때 기업은 보통 사용자 정보 저장소를 한곳에 모아서 관리하게 되는데, IAM(Identity and Access Management) 에서는 이를 **realm** 이라 합니다.
@@ -71,7 +71,7 @@ OAuth 2.0의 사양과 확장은 [IETF OAuth Working Group] (https://www.ietf.or
 
 *Difficult for single-sign-on*
 
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept1-1.png)
+![](/assets/sso/concept/concept1-1.png)
 
 ---
 
@@ -84,7 +84,7 @@ OAuth 2.0의 사양과 확장은 [IETF OAuth Working Group] (https://www.ietf.or
  
 기업이 보유한 서비스가 많고 사용자정보 저장소가 다양하고 많을수록 이 방법의 이점이 커집니다.
 
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept5.png)
+![](/assets/sso/concept/concept5.png)
 
 ---
 
@@ -110,10 +110,10 @@ OAuth 2.0의 사양과 확장은 [IETF OAuth Working Group] (https://www.ietf.or
 모든 작업 정의는 UI Modeler 에서 설정할 수 있으며 서버를 다시 시작하지 않고 즉시 반영됩니다. 2 단계 인증과 같은 로그인 시나리오가 가능합니다.
 
 *Example pipeline for login*
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept6.png)
+![](/assets/sso/concept/concept6.png)
 
 *User storage with CRUD pipelines*
-![](http://ssodoc.lgcom.lge.com/docs/image/storage/storage-5.png)
+![](/assets/sso/storage/storage-5.png)
 
 ### Extends pipeline
 
@@ -122,13 +122,13 @@ OAuth 2.0의 사양과 확장은 [IETF OAuth Working Group] (https://www.ietf.or
 이 경우 애플리케이션에서는 사용자 처리와 연관된 로직들을 어플리케이션에서 완전히 분리하여 **마이크로 서비스 지향적인 설계를 할 수 있습니다.**
 
 *CRUD operations with pipeline*
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept7.png)
+![](/assets/sso/concept/concept7.png)
   
 *다양한 시나리오의 파이프라인을 구성*
-![](http://ssodoc.lgcom.lge.com/docs/image/storage/storage-6.png)
+![](/assets/sso/storage/storage-6.png)
 
 *파이프라인 모델링과 테스트 샘픔*
-![](http://ssodoc.lgcom.lge.com/docs/image/pipeline/pipeline-5.png)
+![](/assets/sso/pipeline/pipeline-5.png)
 
 ## How to single-sign-on? 
 
@@ -140,7 +140,7 @@ Oauth2.0 Spec 은 인증-인가에 대한 flow 를 제공하고 있지만 이것
 > Oauth2 를 확장하여 동시로그인 모델을 이해할 수 있는 간단한 설명
 
 *SiteA initial login*
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept8.png)
+![](/assets/sso/concept/concept8.png)
 
 1. 브라우저가 SiteA 에 접근합니다.
 2. 사용자가 SiteA 에 로그인하지 않았으므로 브라우저가 사용자를 SSO 서버로 리디렉션 합니다.
@@ -151,7 +151,7 @@ Oauth2.0 Spec 은 인증-인가에 대한 flow 를 제공하고 있지만 이것
 7. SiteA는 발행 된 토큰을 어플리케이션 세션 또는 브라우저에 저장합니다.
 
 *Log in to SiteB while logged into SiteA*
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept9.png)
+![](/assets/sso/concept/concept9.png)
  
 1. 브라우저가 SiteB 에 접근합니다.
 2. 사용자가 SiteB 에 로그인하지 않았으므로 브라우저가 사용자를 SSO 서버로 리디렉션 합니다.
@@ -161,7 +161,7 @@ Oauth2.0 Spec 은 인증-인가에 대한 flow 를 제공하고 있지만 이것
 6. SiteB는 발행 된 토큰을 어플리케이션 세션 또는 브라우저에 저장합니다.
 
 *Log out*
-![](http://ssodoc.lgcom.lge.com/docs/image/concept/concept10.png)
+![](/assets/sso/concept/concept10.png)
 
 1. SiteA에서 로그 아웃을 클릭하면 브라우저가 사용자를 SSO 로그 아웃 URL로 리디릭션 합니다.
 2. SSO 서버가 사용자 토큰을 만료시키고 세션에서 삭제합니다.
