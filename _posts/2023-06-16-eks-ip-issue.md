@@ -10,6 +10,7 @@ author: 이화경
 ---
 
 지난 달, 현재 운영하고 있는 고객사의 서비스가 DevOps 팀의 EKS로 넘어오는 작업이 있었습니다.
+
 해당 작업 진행 후 EKS IP가 부족하여 Pod가 제대로 뜨지 못하는 이슈가 발생했고, 
 재발 방지와 동일한 이슈 발생시 빠른 해결을 위해 이 문제의 원인과 해결 방안에 대해 공유하는 글을 작성하게 되었습니다.
 
@@ -38,6 +39,8 @@ Blue/Green 배포 방식은 무중단 배포 방식으로 새로운 배포가 �
 ![image](https://github.com/KuberixEnterprise/kuberixenterprise.github.io/assets/32283544/08332a21-98bf-4256-aff3-f559822f24c4)
 
 *<center>이것도 이슈 발생에 한 몫..</center>*
+
+Pod가 위와 같은 스펙을 가지게 되면서 Node 1개에 Pod 1개가 뜨게 되었습니다..
 
 
 
@@ -71,9 +74,10 @@ Pod를 제대로 띄우기 위해서는 IP 확보를 해야 했습니다.
 
 Prometheus을 삭제했음에도 불구하고 IP가 돌아오지 않은 이유를 찾아보던 중 한 [블로그글](https://aws-diary.tistory.com/146)을 발견했습니다.
 
-해당 글에서 aws-node ds 세팅과 관련하여 MINIMUM_IP_TARGET과 WARM_IP_TARGET에 대해 알게 되었습니다.
+해당 글에서 aws-node Daemonset 세팅과 관련하여 MINIMUM_IP_TARGET과 WARM_IP_TARGET에 대해 알게 되었습니다.
 
-**WARM_IP_TARGET**은 Pod의 Secondary IP 값이고, **MINIMUM_IP_TARGET**은 ENI에서 IP를 미리 가져가는 값으로 아래 명령어를 통해 확인이 가능합니다.
+요약해서 설명하면 **WARM_IP_TARGET**은 Pod의 Secondary IP 값이고, **MINIMUM_IP_TARGET**은 ENI에서 IP를 미리 선점해가는 개수입니다.
+해당 값들은 아래 명령어를 통해 확인이 가능합니다.
 
  ```
  kubectl describe daemonset -n kube-system aws-node
@@ -83,7 +87,7 @@ Prometheus을 삭제했음에도 불구하고 IP가 돌아오지 않은 이유�
 <center>참고 이미지</center>
 
 
-각 Node가 고정적으로 가져가는 IP 개수는 6개였는데 위의 명령어로 확인해보니 **MINIMUM_IP_TARGET**이 13으로 설정되어 있어서 Prometheus를 삭제해도 IP를 반납하지 않았던 것이었습니다.
+각 Node가 고정적으로 필요한 IP 개수는 대략 6개였는데 위의 명령어로 확인해보니 **MINIMUM_IP_TARGET**이 13으로 설정되어 있었고, 사용하고 있는 IP 개수보다 더 많이 IP를 선점하고 있어서 Prometheus를 삭제해도 IP를 반납하지 않았던 것이었습니다.
 
 그래서 아래 명령어로 **MINIMUM_IP_TARGET**을 8개로 변경하였더니 빠르게 IP를 뱉어냈고 확보한 IP로 Pod가 정상적으로 생성되면서 Blue/Green 스위치가 성공적으로 이루어졌습니다..!
 
